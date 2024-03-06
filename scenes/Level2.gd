@@ -25,4 +25,4 @@ func on_player_died():
 	create_player()
 
 func on_player_won():
-	var scene_change = get_tree().change_scene("res://scenes/Level2.tscn")
+	var scene_change = get_tree().change_scene("res://scenes/WinScreen.tscn")
