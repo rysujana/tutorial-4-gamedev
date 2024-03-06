@@ -9,6 +9,7 @@ func _ready():
 	register_player($Player)
 	
 	$EndLevel.connect("player_won", self, "on_player_won")
+	$LoseScreen.connect("player_lose", self, "on_player_lose")
 
 func register_player(player):
 	currentPlayerNode = player
@@ -26,3 +27,6 @@ func on_player_died():
 
 func on_player_won():
 	var scene_change = get_tree().change_scene("res://scenes/Level2.tscn")
+
+func on_player_lose():
+	var scene_change = get_tree().change_scene("res://scenes/LoseScreen.tscn")
