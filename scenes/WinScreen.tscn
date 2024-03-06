@@ -3,5 +3,6 @@
 [ext_resource path="res://Assets/Keanu.png" type="Texture" id=1]
 
 [node name="WinScreen" type="Sprite"]
-position = Vector2( 512.329, 294.151 )
+position = Vector2( 159.082, 90.8676 )
+scale = Vector2( 0.308433, 0.312745 )
 texture = ExtResource( 1 )
